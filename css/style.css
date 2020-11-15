@@ -184,7 +184,7 @@ line-height: 30px;
     line-height: 30px;
     color: #363636;
     margin-bottom: 55px;
-    width: 437px;
+    width: 444px;
     height: 69px;
     padding-top: 20px;
     position: relative;
@@ -674,7 +674,7 @@ input[type="radio"]{
     .menu{
         height: 32px;
     }
-    
+
     .list{
         padding-left: 64px;
     }
@@ -785,7 +785,7 @@ input[type="radio"]{
         width: 215px;
         height: 265px;
     }
-    
+
     .photo-left{
         width: 317px;
     }
@@ -825,7 +825,7 @@ input[type="radio"]{
     .avatar{
         width: 105px;
         height: 105px;
-        margin-top: 14px;  
+        margin-top: 14px;
     }
 
     .snake{
@@ -914,7 +914,7 @@ input[type="radio"]{
         width: 202px;
         height: 53px;
     }
-    
+
     .map-container{
         margin-top: 51px;
     }
