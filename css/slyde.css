@@ -38,7 +38,8 @@
     .slider__control {
       position: absolute;
       top: 50%;
-      display: none;
+      display: block;
+      padding: 17px;
       align-items: center;
       justify-content: center;
       color: #fff;
@@ -50,12 +51,15 @@
       display: flex;
     }
 
-    .slider__control:hover,
-    .slider__control:focus {
-      color: #fff;
-      text-decoration: none;
-      outline: 0;
-      opacity: 0.9;
+    .slider__control:hover {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border: 0px solid #fff;
+      border-radius: 50%;
+    }
+
+    .slider__control:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     }
 
     .slider__control_prev {
@@ -69,7 +73,7 @@
     .slider__control::before {
       content: '';
       display: inline-block;
-      width: 33px;
+      width: 66px;
       height: 66px;
       background: transparent no-repeat center center;
       background-size: 100% 100%;

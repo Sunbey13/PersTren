@@ -110,6 +110,14 @@ body {
     line-height: 30px;
 }
 
+.nav-link:active{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
+}
+
 .first-block {
     height: 558px;
 }
@@ -512,6 +520,14 @@ input[type="radio"] {
     background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
 }
 
+.button-add:hover{
+    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+}
+
+.button-add:active{
+    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
+}
+
 .zapis {
     text-align: center;
     margin-top: 60px;
@@ -599,6 +615,14 @@ input[type="radio"] {
     border-radius: 50px;
     border: none;
     background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
+}
+
+.calling:hover{
+    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+}
+
+.calling:active{
+    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
 }
 
 /* свойства модального окна по умолчанию */
@@ -768,6 +792,14 @@ input[type="radio"] {
     margin-top: 67px;
 }
 
+.modal-calling:hover{
+    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+}
+
+.modal-calling:active{
+    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
+}
+
 .footer {
     width: 100%;
     background: #10133A;
@@ -798,6 +830,21 @@ input[type="radio"] {
     font-size: 22px;
     line-height: 30px;
     color: #FFFFFF;
+    width: 130px;
+}
+
+.text-link:hover {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+}
+
+.text-link:active{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
 }
 
 .logo-link {
