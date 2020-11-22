@@ -215,14 +215,17 @@
       <div class="line-form"></div>
       <form action="#" method="POST" class="form">
         <div class="vvod-container">
-          <label for="F_name" class="info">Имя*</label><input type="text" required name="F_name" id="F_name" class="vvod">
+          <label for="F_name" class="info">Имя*</label><input type="text" required name="F_name" id="F_name" class="vvod"
+            autocomplete="off">
         </div>
         <div class="vvod-container">
-          <label for="L_name" class="info">Фамилия*</label><input type="text" required name="L_name" id="L_name" class="vvod">
+          <label for="L_name" class="info">Фамилия*</label><input type="text" required name="L_name" id="L_name" class="vvod"
+            autocomplete="off">
         </div>
         <div class="vvod-container">
           <label for="Phone" class="info">Телефон*</label>
-          <input type="tel" required name="Phone" value="+375" id="Phone" class="vvod" pattern="\+375[1-4]{1}[3-9]{1}[0-9]{7}">
+          <input type="tel" required name="Phone" value="+375" id="Phone" class="vvod" pattern="\+375[1-4]{1}[3-9]{1}[0-9]{7}"
+            autocomplete="off">
         </div>
         <div class="vvod-container">
           <label for="goal" class="info">Цель</label>
@@ -280,7 +283,7 @@
                   <div class="modal-vvod-container">
                     <label for="Phone" class="info">Телефон*</label>
                     <input type="tel" required name="Phone" value="+375" id="Phone" class="vvod modal-vvod"
-                      pattern="\+375[1-4]{1}[3-9]{1}[0-9]{7}">
+                      pattern="\+375[1-4]{1}[3-9]{1}[0-9]{7}" autocomplete="off">
                   </div>
                   <input type="submit" class="calling modal-calling" value="Заказать звонок" name="modal-calling">
                 </form>
