@@ -87,6 +87,7 @@ body {
 }
 
 .list-item {
+    width: 130px;
     float: left;
     padding-top: 15px;
     margin-right: 264px;
