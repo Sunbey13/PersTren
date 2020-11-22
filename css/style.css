@@ -639,7 +639,7 @@ input[type="radio"] {
 @media (min-width: 576px) {
     .modal-dialog {
     max-width: 821px;
-    margin: 200px auto;
+    margin: 100px auto;
     }
 }
 
