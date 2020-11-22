@@ -56,10 +56,6 @@ body {
     fill: #10133a;
 }
 
-.icon:hover {
-    fill: #ef4621;
-}
-
 .contact-social {
     margin-top: 22px;
 }
@@ -90,7 +86,7 @@ body {
     width: 130px;
     float: left;
     padding-top: 15px;
-    margin-right: 264px;
+    margin-right: 240px;
 }
 
 .list-item:last-child {
@@ -102,20 +98,6 @@ body {
     font-size: 22px;
     line-height: 30px;
     color: #FFFFFF;
-}
-
-.nav-link:hover {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-.nav-link:active{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-    color: #FFFFFF;
-    opacity: 0.7;
 }
 
 .first-block {
@@ -189,6 +171,7 @@ body {
     width: 1%;
     height: 100%;
     background: linear-gradient(#EF4621, #F6CF45);
+    border-radius: 50px;
 }
 
 .tab-buttons {
@@ -211,10 +194,6 @@ body {
     line-height: 30px;
     text-align: center;
     color: #363636;
-}
-
-.tab-button:hover {
-    cursor: pointer;
 }
 
 .tab-button.active {
@@ -261,7 +240,7 @@ body {
     display: flex;
 }
 
-.tab-content .tab-text{
+.tab-text{
     max-width: 674px;
     font-weight: bold;
     font-size: 24px;
@@ -445,7 +424,7 @@ body {
     line-height: 41px;
     color: #000000;
     background-color: #D9D9D9;
-    border: 1 px solid #D9D9D9;
+    border: 1px solid #D9D9D9;
 }
 
 label {
@@ -518,14 +497,6 @@ input[type="radio"] {
     border-radius: 50px;
     border: none;
     background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
-}
-
-.button-add:hover{
-    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
-}
-
-.button-add:active{
-    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
 }
 
 .zapis {
@@ -615,14 +586,6 @@ input[type="radio"] {
     border-radius: 50px;
     border: none;
     background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
-}
-
-.calling:hover{
-    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
-}
-
-.calling:active{
-    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
 }
 
 /* свойства модального окна по умолчанию */
@@ -754,7 +717,6 @@ input[type="radio"] {
     -webkit-flex: 1 1 auto;
     -ms-flex: 1 1 auto;
     flex: 1 1 auto;
-    padding: 15px;
     overflow: auto;
 }
 
@@ -792,14 +754,6 @@ input[type="radio"] {
     margin-top: 67px;
 }
 
-.modal-calling:hover{
-    box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
-}
-
-.modal-calling:active{
-    box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
-}
-
 .footer {
     width: 100%;
     background: #10133A;
@@ -831,24 +785,16 @@ input[type="radio"] {
     line-height: 30px;
     color: #FFFFFF;
     width: 130px;
+    margin-left: 60px;
 }
 
-.text-link:hover {
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-}
-
-.text-link:active{
-    font-weight: bold;
-    font-size: 22px;
-    line-height: 30px;
-    color: #FFFFFF;
-    opacity: 0.7;
+.text-link:first-child{
+    margin-left: 0;
 }
 
 .logo-link {
     margin-top: 33px;
+    margin-left: 57px;
 }
 
 @media(max-width: 768px) {
@@ -906,8 +852,9 @@ input[type="radio"] {
     }
 
     .list-item {
-        margin-right: 106px;
+        margin-right: 100px;
         padding-top: 6px;
+        width: auto;
     }
 
     .nav-link {
@@ -951,6 +898,9 @@ input[type="radio"] {
 
     .must-call {
         display: block;
+        text-align: center;
+        padding: 10px;
+        text-decoration: none;
         background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
         border-radius: 50px;
         width: 294px;
@@ -966,6 +916,58 @@ input[type="radio"] {
 
     .second-block {
         margin-bottom: 51px;
+    }
+
+    .container.tab{
+        height: 318px;
+    }
+
+    .tabs{
+        height: 318px;
+    }
+
+    .tab-column{
+        margin-left: 64px;
+        margin-top: 51px;
+        height: 239px;
+        width: 35%;
+    }
+
+    .tab-button.tab-button.active{
+        padding-left: 25px;
+    }
+
+    .tab-button.tab-button.active::after{
+        width: 4px;
+        right: -3px;
+    }
+
+    .tab-img{
+        width: 144px;
+        height: 144px;
+    }
+
+    .tab-content{
+        margin-top: 51px;
+        max-width: 324px;
+        height: 230px;
+    }
+
+    .tab-button{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 19px;
+        color: #363636;
+    }
+
+    .tab-text{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #343434;
+        max-width: 324px;
     }
 
     .third-block {
@@ -1027,10 +1029,6 @@ input[type="radio"] {
 
     .slider {
         height: 370px;
-    }
-
-    .slider__control_prev {
-        margin-left: 54px;
     }
 
     .slide-content {
@@ -1202,6 +1200,57 @@ input[type="radio"] {
         font-size: 16px;
         line-height: 22px;
         margin-left: 52px;
+        padding: 15px;
+    }
+
+    .modal-dialog{
+        max-width: 486px;
+    }
+
+    .modal-content{
+        height: 332px;
+    }
+
+    .modal-title{
+        margin-top: 31px;
+        font-size: 24px;
+        line-height: 33px;
+    }
+
+    .modal-text{
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 405px;
+        margin: auto;
+    }
+
+    .modal-text-title{
+        margin-top: 31px;
+    }
+
+    .modal-vvod-container{
+        width: 410px;
+        margin-top: 23px;
+    }
+
+    .modal-vvod{
+        width: 278px;
+        height: 38px;
+        font-size: 20px;
+        line-height: 27px;
+        padding-left: 15px;
+    }
+
+    .modal-label{
+        font-size: 20px;
+        line-height: 27px;
+        padding-top: 3px;
+    }
+
+    .modal-calling{
+        margin: auto;
+        margin-top: 41px;
+        padding: 10px;
     }
 
     .footer {
@@ -1290,3 +1339,75 @@ input[type="radio"] {
   }
 }
 
+@media(min-width: 1400px){
+    .icon:hover {
+        fill: #ef4621;
+    }
+
+    .nav-link:hover {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    }
+
+    .nav-link:active{
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 30px;
+    color: #FFFFFF;
+    opacity: 0.7;
+    }
+  
+    .tab-button:hover {
+    cursor: pointer;
+    }
+
+    .button-add:hover{
+        box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+    }
+
+    .button-add:active{
+        box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
+    }
+
+    .calling:hover{
+        box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+    }
+
+    .calling:active{
+        box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
+    }
+
+    .modal-calling:hover{
+        box-shadow: 0px 4px 4px rgba(255, 148, 50, 0.4);
+    }
+
+    .modal-calling:active{
+        box-shadow: inset 0px 4px 4px rgba(239, 70, 33, 0.5);
+    }
+
+    .text-link:hover {
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+    }
+
+    .text-link:active{
+        font-weight: bold;
+        font-size: 22px;
+        line-height: 30px;
+        color: #FFFFFF;
+        opacity: 0.7;
+    }
+
+        .slider__control:hover {
+      background: #FFFFFF;
+      box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      border: 0px solid #fff;
+      border-radius: 50%;
+    }
+
+    .slider__control:active {
+      box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+    }
+}
