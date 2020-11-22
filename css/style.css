@@ -328,7 +328,7 @@ body {
     height: 3px;
     border-radius: 50px;
     background: linear-gradient(45deg, #F6CF45, #EF4621);
-    margin-left: 1008px;
+    margin-left: 995px;
 }
 
 .photo-left {
@@ -445,7 +445,7 @@ body {
     line-height: 41px;
     color: #000000;
     background-color: #D9D9D9;
-    border: none;
+    border: 1 px solid #D9D9D9;
 }
 
 label {
