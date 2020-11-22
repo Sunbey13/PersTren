@@ -415,8 +415,9 @@ body {
 }
 
 .line-form {
+    margin: auto;
     margin-top: 10px;
-    max-width: 856px;
+    max-width: 830px;
     height: 3px;
     border-radius: 50px;
     background: linear-gradient(45deg, #F6CF45, #EF4621);
