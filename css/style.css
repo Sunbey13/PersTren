@@ -1203,8 +1203,10 @@ input[type="radio"] {
         height: 42px;
         font-size: 16px;
         line-height: 22px;
-        margin-left: 52px;
+        margin-left: 48px;
         padding: 15px;
+        padding-left: 23px;
+        padding-right: 23px;
     }
 
     .modal-dialog{
