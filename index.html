@@ -3,10 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="js/jQuery.js"></script>
+  <script src="js/tabs.js"></script>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/slyde.css">
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/tabs.css">
   <title>Персональные тренировки</title>
 </head>
 <body>
@@ -33,6 +34,13 @@
             <use xlink:href="img/icons.svg#fb"></use>
           </svg>
         </a>
+        </div>
+        <div class="toggle">
+          <a href="#" class="menu-toggle" id="menu-toggle">
+            <span></span>
+            <span></span>
+            <span></span>
+          </a>
         </div>
       </div>
     </div>
@@ -69,26 +77,48 @@
     </div>
   </div>
   <!-- -------------------ВКЛАДКИ------------------- -->
-  <div class="second-block">
+  <div class="container tab">
     <div class="tabs">
-      <div class="left-side">
-        <div class="tabs-nav">
-          <a href="" class="tab-link">Учет особенностей здоровья</a>
-          <a href="" class="tab-link  active"><div class="left-border"></div> Эффективность упражнений<div class="right-border"></div></a>
-          <a href="" class="tab-link">Индивидуальный график</a>
-          <a href="" class="tab-link">Персональное питание</a>
+      <div class="tab-column">
+        <div class="tab-buttons">
+          <div class="tab-button health" id="health">Учет особенностей здоровья</div>
+          <div class="tab-button exercises" id="exercises">Эффективность упражнений</div>
+          <div class="tab-button graphic" id="graphic">Индивидуальный график</div>
+          <div class="tab-button food" id="food">Персональное питание</div>
         </div>
+        <div class="tab-line"></div>
       </div>
-      <div class="border"></div>
-      <div class="right-side">
-        <div class="tab-content">
-          <img src="img/tab2.png" alt="muscul" class="muscul">
-          <p class="tab-content-text">Результат работы не заставит себя ждать! Уже через неделю вы увидите изменения в зеркале.</p> 
-        </div>
-        <div class="tab-content"></div>
-        <div class="tab-content"></div>
-        <div class="tab-content"></div>
+      <div class="tab-content health">
+        <img src="img/tab1.png" alt="health">
+        <p class="tab-text">
+          Учитываются все особенности Вашего здоровья.
+          Для нас важно, чтобы занятия не были во вред
+          Вашему здоровью.
+        </p>
       </div>
+      <div class="tab-content exercises">
+        <img src="img/tab2.png" alt="exercises">
+        <p class="tab-text">
+          Результат работы не заставит себя ждать!
+          Уже через неделю вы увидите изменения в зеркале.
+        </p>
+      </div>
+      <div class="tab-content graphic">
+        <img src="img/tab3.png" alt="graphic">
+        <p class="tab-text">
+          Дни и время занятий подбираются
+          индивидуально под Вас.
+        </p>
+      </div>
+      <div class="tab-content food">
+        <img src="img/tab4.png" alt="food">
+        <p class="tab-text">
+          Для более эффективного и быстрого результатамы
+          составим для Вас фитнес-меню с учетом Ваших
+          предпочтений.
+        </p>
+      </div>
+  
     </div>
   </div>
     <!-- -------------------/ВКЛАДКИ------------------- -->

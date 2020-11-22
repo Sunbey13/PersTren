@@ -1,4 +1,3 @@
-<style>
     /* стили для элемента body */
     body {
       margin: 0;
@@ -42,13 +41,9 @@
       display: none;
       align-items: center;
       justify-content: center;
-      width: 40px;
       color: #fff;
       text-align: center;
-      opacity: 0.5;
-      height: 50px;
       transform: translateY(-50%);
-      background: rgba(0, 0, 0, 0.5);
     }
 
     .slider__control_show {
@@ -74,18 +69,31 @@
     .slider__control::before {
       content: '';
       display: inline-block;
-      width: 20px;
-      height: 20px;
+      width: 33px;
+      height: 66px;
       background: transparent no-repeat center center;
       background-size: 100% 100%;
     }
 
+@media(max-width: 768px){
+    .slider__control::before {
+    width: 18px;
+    height: 35px;
+    }
+}
+
+@media(max-width: 375px){
+    .slider__control::before {
+    display: none;
+    }
+}
+
     .slider__control_prev::before {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M5.25 0l-4 4 4 4 1.5-1.5-2.5-2.5 2.5-2.5-1.5-1.5z'/%3E%3C/svg%3E");
+      background-image: url(../img/prev.svg);
     }
 
     .slider__control_next::before {
-      background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23fff' viewBox='0 0 8 8'%3E%3Cpath d='M2.75 0l-1.5 1.5 2.5 2.5-2.5 2.5 1.5 1.5 4-4-4-4z'/%3E%3C/svg%3E");
+      background-image: url(../img/next.svg);
     }
 
     .slider__indicators li {
@@ -113,4 +121,3 @@
       height: auto;
       max-width: 100%;
     }
-  </style>
