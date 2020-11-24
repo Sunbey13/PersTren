@@ -206,7 +206,7 @@
     <div class="fifth-block">
       <iframe src="https://www.youtube.com/embed/TcxZzoY0L6c"
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen
-        class="video"></iframe>
+        class="video" frameborder="0"></iframe>
       </div>
     <div class="sixth-block" id="form">
       <h3 class="form-title">Записаться на пробное бесплатное занятие</h3>
@@ -235,7 +235,7 @@
             <option value="Специализированные тренировки">Специализированные тренировки</option>
           </select>
         </div>
-        <div class="radio-buttons">
+        <!-- <div class="radio-buttons">
           <label class="info">Адрес*</label>
           <div class="address">
             <div class="radio-button first-button">
@@ -245,7 +245,20 @@
               <input type="radio" id="yab" name="address"><label for="yab" class="radio-label">пер. Яблочный 1</label>
             </div>
           </div>
-        </div>
+        </div> -->
+        <div class="form-group">
+          <label>Адрес*</label>
+          <div class="radio-group">
+            <div class="radio-line">
+              <input name="address" id="address1" type="radio" required checked>
+              <label class="radio-label" for="address1">ул. Комсомольская 7</label>
+            </div>
+            <div class="radio-line">
+              <input name="address" id="address2" type="radio" required>
+              <label class="radio-label" for="address2">пер. Яблочный 1</label>
+            </div>
+          </div>
+          </div>
         <div class="zapis">
           <button class="button-add" type="submit" name="add">Записаться</button>
         </div>
@@ -254,7 +267,7 @@
     <div class="map-container" id="contact">
     <iframe
       src="https://yandex.ru/map-widget/v1/?um=constructor%3Ab36c4b5997fb51b0910eabe1e994616b898ca5c855622522ac150dcb0549ee59&amp;source=constructor"
-       class="map"></iframe>
+       class="map" frameborder= "0"></iframe>
     <div class="map-block">
       <h3 class="map-block-title">Контакты</h3>
       <div class="map-line"></div>
