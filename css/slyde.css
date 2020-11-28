@@ -68,18 +68,23 @@
       background-size: 100% 100%;
     }
 
-@media(max-width: 768px){
-    .slider__control::before {
-    width: 35px;
-    height: 35px;
+    @media(max-width: 768px){
+        .slider__control::before {
+        width: 35px;
+        height: 35px;
+        }
     }
-}
 
-@media(max-width: 375px){
-    .slider__control::before {
-    display: none;
+    @media(max-width: 375px){
+        .slider__control::before {
+        width: 25px;
+        height: 25px;
+        }
+
+        .slider__control_next{
+          margin-left: 81%;
+        }
     }
-}
 
     .slider__control_prev::before {
       background-image: url(../img/prev.svg);

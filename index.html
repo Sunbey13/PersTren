@@ -34,13 +34,11 @@
             <use xlink:href="img/icons.svg#fb"></use>
           </svg>
         </a>
-        </div>
-        <div class="toggle">
-          <a href="#" class="menu-toggle" id="menu-toggle">
-            <span></span>
-            <span></span>
-            <span></span>
-          </a>
+        <a href="#" class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </a>
         </div>
       </div>
     </div>
@@ -77,52 +75,53 @@
         <img src="img/ledy.png" alt="ledy" class="ledy">
     </div>
   </div>
-  <div class="container tab">
-    <div class="tabs">
-      <div class="tab-column">
-        <div class="tab-buttons">
-          <div class="tab-button health" id="health">Учет особенностей здоровья</div>
-          <div class="tab-button exercises" id="exercises">Эффективность упражнений</div>
-          <div class="tab-button graphic" id="graphic">Индивидуальный график</div>
-          <div class="tab-button food" id="food">Персональное питание</div>
+  <div class="second-block">
+      <div class="container tab">
+        <div class="tabs">
+          <div class="tab-column">
+            <div class="tab-buttons">
+              <div class="tab-button health" id="health">Учет особенностей здоровья</div>
+              <div class="tab-button exercises" id="exercises">Эффективность упражнений</div>
+              <div class="tab-button graphic" id="graphic">Индивидуальный график</div>
+              <div class="tab-button food" id="food">Персональное питание</div>
+            </div>
+            <div class="tab-line"></div>
+          </div>
+          <div class="tab-content health">
+            <img src="img/tab1.png" alt="health" class="tab-img">
+            <p class="tab-text">
+              Учитываются все особенности Вашего здоровья.
+              Для нас важно, чтобы занятия не были во вред
+              Вашему здоровью.
+            </p>
+          </div>
+          <div class="tab-content exercises">
+            <img src="img/tab2.png" alt="exercises" class="tab-img">
+            <p class="tab-text">
+              Результат работы не заставит себя ждать!
+              Уже через неделю вы увидите изменения в зеркале.
+            </p>
+          </div>
+          <div class="tab-content graphic">
+            <img src="img/tab3.png" alt="graphic" class="tab-img">
+            <p class="tab-text">
+              Дни и время занятий подбираются
+              индивидуально под Вас.
+            </p>
+          </div>
+          <div class="tab-content food">
+            <img src="img/tab4.png" alt="food" class="tab-img">
+            <p class="tab-text">
+              Для более эффективного и быстрого результатамы
+              составим для Вас фитнес-меню с учетом Ваших
+              предпочтений.
+            </p>
+          </div>
         </div>
-        <div class="tab-line"></div>
       </div>
-      <div class="tab-content health">
-        <img src="img/tab1.png" alt="health" class="tab-img">
-        <p class="tab-text">
-          Учитываются все особенности Вашего здоровья.
-          Для нас важно, чтобы занятия не были во вред
-          Вашему здоровью.
-        </p>
-      </div>
-      <div class="tab-content exercises">
-        <img src="img/tab2.png" alt="exercises" class="tab-img">
-        <p class="tab-text">
-          Результат работы не заставит себя ждать!
-          Уже через неделю вы увидите изменения в зеркале.
-        </p>
-      </div>
-      <div class="tab-content graphic">
-        <img src="img/tab3.png" alt="graphic" class="tab-img">
-        <p class="tab-text">
-          Дни и время занятий подбираются
-          индивидуально под Вас.
-        </p>
-      </div>
-      <div class="tab-content food">
-        <img src="img/tab4.png" alt="food" class="tab-img">
-        <p class="tab-text">
-          Для более эффективного и быстрого результатамы
-          составим для Вас фитнес-меню с учетом Ваших
-          предпочтений.
-        </p>
-      </div>
-  
-    </div>
   </div>
   <div class="third-block">
-    <div class="third-block-content" id="trenera">
+    <div class="third-content-row first-row">
       <div class="content-left">
         <h3 class="third-title">Наши тренера</h3>
         <div class="line"></div>
@@ -133,16 +132,14 @@
           спортсменами.
         </p>
       </div>
-      <div class="photo-right">
+      <div class="content-right">
         <img src="img/trenera.jpg" class="trenera" alt="Trenera">
       </div>
     </div>
-    <div class="third-block-content" id="trenerovki">
-      <div class="photo-left">
-        <img src="img/trenerovki.jpg" alt="Trenerovki" class="trenerovki">
-      </div>
+    <div class="third-content-row second-row">
+      <div class="content-left"><img src="img/trenerovki.jpg" alt="Trenerovki" class="trenerovki"></div>
       <div class="content-right">
-        <h3 class="third-title third-title-right">Тренировки</h3>
+        <h3 class="third-title">Тренеровки</h3>
         <div class="line-right"></div>
         <p class="third-text text-right">План тренировки составляется исходя
           из Ваших целей. План питания также составляется
@@ -209,7 +206,7 @@
         class="video" frameborder="0"></iframe>
       </div>
     <div class="sixth-block" id="form">
-      <h3 class="form-title">Записаться на пробное бесплатное занятие</h3>
+      <h3 class="form-title">Записаться на пробное БЕСПЛАТНОЕ занятие</h3>
       <div class="line-form"></div>
       <form action="#" method="POST" class="form">
         <div class="vvod-container">
@@ -235,17 +232,6 @@
             <option value="Специализированные тренировки">Специализированные тренировки</option>
           </select>
         </div>
-        <!-- <div class="radio-buttons">
-          <label class="info">Адрес*</label>
-          <div class="address">
-            <div class="radio-button first-button">
-              <input type="radio" id="koms" name="address" checked="checked"><label for="koms" class="radio-label">ул. Комсомольская 7</label>
-            </div>
-            <div class="radio-button second-button">
-              <input type="radio" id="yab" name="address"><label for="yab" class="radio-label">пер. Яблочный 1</label>
-            </div>
-          </div>
-        </div> -->
         <div class="form-group">
           <label>Адрес*</label>
           <div class="radio-group">
