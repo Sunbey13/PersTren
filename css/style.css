@@ -16,7 +16,7 @@ body {
     width:100px;
     text-align:center;
     padding:5px;
-    position:fixed;
+    position: fixed;
     bottom:30px; /* отступ кнопки от нижнего края страницы*/
     right:30px;
     cursor:pointer;
