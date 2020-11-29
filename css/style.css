@@ -7,6 +7,25 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+.top-img{
+    width: 75px;
+    height: 75px;
+}
+
+#toTop {
+    width:100px;
+    text-align:center;
+    padding:5px;
+    position:fixed;
+    bottom:30px; /* отступ кнопки от нижнего края страницы*/
+    right:30px;
+    cursor:pointer;
+    display:none;
+    color:#333;
+    font-family:verdana;
+    font-size:11px;
+}
+
 .container {
     max-width: 1440px;
     margin: auto;
@@ -857,6 +876,16 @@ input[type="radio"] {
 }
 
 @media(max-width: 768px) {
+    .top-img{
+        width: 60px;
+        height: 60px;
+    }
+
+    #toTop{
+        right: 0;
+        bottom: 10px;
+    }
+
     .header-logo {
         margin-left: 64px;
         margin-top: 20px;
@@ -1330,13 +1359,12 @@ input[type="radio"] {
     }
 }
 
-@media(min-width: 1441px) {
-    .tab-link {
-        width: 436px;
-        }
-}
-
 @media(max-width: 375px) {
+    .top-img{
+        width: 50px;
+        height: 50px;
+    }
+
     .logo {
         width: 71px;
         height: 43px;
