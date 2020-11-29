@@ -256,6 +256,10 @@ body {
     color: #343434;
 }
 
+.second-block-mob{
+    display: none;
+}
+
 .third-block{
     margin-bottom: 90px;
 }
@@ -1433,6 +1437,11 @@ input[type="radio"] {
     }
 
     .second-block{
+        display: none;
+    }
+
+    .second-block-mob{
+        display: block;
         margin-bottom: 42px;
     }
 
@@ -1668,6 +1677,60 @@ input[type="radio"] {
         height: 23px;
         font-size: 13px;
         line-height: 18px;
+    }
+
+    .modal-dialog{
+        margin: auto;
+        margin-top: 21px;
+        max-width: 255px;
+    }
+
+    .modal-content{
+        height: 293px;
+    }
+
+    .close{
+        top: 9px;
+        right: 7px;
+        font-size: 25px;
+    }
+
+    .modal-title{
+        margin-top: 32px;
+        font-size: 18px;
+        line-height: 25px;
+    }
+
+    .modal-text{
+        font-size: 14px;
+        line-height: 19px;
+        max-width: 221px;
+    }
+
+    .modal-text-title{
+        margin-top: 35px;
+    }
+
+    .modal-vvod-container{
+        width: 225px;
+    }
+
+    .modal-label{
+        font-size: 14px;
+        line-height: 19px;
+        padding: 0;
+    }
+
+    .modal-vvod{
+        width: 151px;
+        height: 21px;
+        font-size: 13px;
+        line-height: 18px;
+        padding-left: 10px;
+    }
+
+    .calling{
+        margin-top: 35px;
     }
 
     .footer{
