@@ -367,7 +367,7 @@ body {
 }
 
 .line-slide {
-    max-width: 153px;
+    max-width: 150px;
     height: 3px;
     border-radius: 50px;
     background: linear-gradient(45deg, #F6CF45, #EF4621);
