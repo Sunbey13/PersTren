@@ -1816,7 +1816,9 @@ input[type="radio"] {
       font-size: 22px;
       line-height: 30px;
       color: #10133A;
+      margin: auto;
       margin-top: 39px;
+      max-width: 160px;
   }
 
 }
