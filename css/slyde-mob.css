@@ -1,0 +1,155 @@
+.slider_mob {
+      position: relative;
+      overflow: hidden;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    /* стили для обёртки, в которой заключены слайды */
+    .slider_mob__wrapper {
+      position: relative;
+      overflow: hidden;
+      height: 428px;
+      background: #F4F5FF;
+    }
+
+    /* стили для контейнера слайдов */
+    .slider_mob__items {
+      display: flex;
+      transition: transform 0.6s ease;
+    }
+
+    /* стили для слайдов */
+    .slider_mob__item {
+      flex: 0 0 100%;
+      max-width: 100%;
+    }
+
+    /* стили для кнопок "вперед" и "назад" */
+    .slider_mob__control {
+      position: absolute;
+      top: 50%;
+      display: none;
+      align-items: center;
+      justify-content: center;
+      width: 40px;
+      color: #fff;
+      text-align: center;
+      opacity: 0.5;
+      height: 50px;
+      transform: translateY(-50%);
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    .slider_mob__control_show {
+      display: flex;
+    }
+
+    .slider_mob__control:hover,
+    .slider_mob__control:focus {
+      color: #fff;
+      text-decoration: none;
+      outline: 0;
+      opacity: 0.9;
+    }
+
+    .slider_mob__control_prev {
+      left: 0;
+    }
+
+    .slider_mob__control_next {
+      right: 0;
+    }
+
+    .slider_mob__control::before {
+      content: '';
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      background: transparent no-repeat center center;
+      background-size: 100% 100%;
+    }
+
+    /* стили для индикаторов */
+    .slider_mob__indicators {
+      position: absolute;
+      display: block;
+      right: 0;
+      bottom: 10px;
+      left: 0;
+      z-index: 15;
+      display: flex;
+      justify-content: center;
+      padding-left: 0;
+      list-style: none;
+      margin-top: 0;
+      margin-bottom: 0;
+    }
+
+    .slider_mob__indicators li {
+      box-sizing: content-box;
+      display: block;
+      border-radius: 10px;
+      flex: 0 1 auto;
+      width: 61px;
+      height: 18px;
+      margin-right: 9px;
+      margin-left: 9px;
+      margin-bottom: 54px;
+      text-indent: -999px;
+      cursor: pointer;
+      background: linear-gradient(90deg, #EF4621 0%, #F6CF45 100%);
+      opacity: 0.2;
+      background-clip: padding-box;
+    }
+
+    .slider_mob__indicators li.active {
+      background: linear-gradient(45deg, #F6CF45, #EF4621);
+      opacity: 1;
+    }
+
+    /* для стилизации текущего слайдера */
+    .img-fluid {
+      display: inline-block;
+      height: auto;
+      max-width: 100%;
+    }
+
+    .slider-mob-content{
+        width: 306px;
+        height: 320px;
+        margin: auto;
+        margin-top: 54px;
+    }
+
+    .mob-title-block{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        color: #FFFFFF;
+        background: #10133A;
+        border-radius: 3px;
+        max-width: 258px;
+        padding: 10px 21px;
+        margin: auto;
+        text-align: center;
+    }
+
+    .tab-mob-img{
+        display: block;
+        margin: auto;
+        margin-top: 33px;
+        width: 113px;
+        height: 113px;
+    }
+
+    .tab-mob-text{
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 19px;
+        text-align: center;
+        color: #343434;
+        margin: auto;
+        margin-top: 33px;
+    }
